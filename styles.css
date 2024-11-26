@@ -199,3 +199,78 @@ body {
 
 .job-details {
 }
+
+/* Styles généraux pour mobile */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column; /* Les sections s'empilent sur mobile */
+        text-align: center; /* Centrer le texte pour mobile */
+        padding: 10px;
+    }
+
+    .left-header, .right-header {
+        flex: none;
+        padding: 0;
+    }
+
+    .right-header p {
+        font-size: 14px; /* Réduire la taille de police pour les mobiles */
+    }
+
+    .main-content {
+        flex-direction: column; /* Les colonnes deviennent des blocs */
+        padding: 10px;
+    }
+
+    .left-column, .right-column {
+        flex: none;
+        padding: 0;
+        border: none; /* Supprimer la bordure sur mobile */
+        margin-bottom: 20px; /* Ajouter un espacement entre les sections */
+    }
+
+    .profile-image {
+        position: relative;
+        margin: 10px auto;
+        left: 0;
+        bottom: 0;
+        transform: none;
+    }
+
+    .info-section h2 {
+        font-size: 18px; /* Réduire légèrement les titres */
+    }
+
+    .skills-box {
+        gap: 5px;
+    }
+
+    .skill {
+        font-size: 0.8rem;
+        padding: 8px 10px;
+    }
+
+    .language, .language p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Optimisation pour très petits écrans */
+@media (max-width: 480px) {
+    .subtitle {
+        font-size: 16px; /* Réduire encore les sous-titres */
+    }
+
+    .summary {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+    .right-header p {
+        font-size: 12px;
+    }
+
+    .info-section h2 {
+        font-size: 16px;
+    }
+}
